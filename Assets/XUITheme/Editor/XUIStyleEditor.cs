@@ -17,7 +17,7 @@ namespace XUI.Editor {
         const string kXUIStyleFolder = "XUIStyles";
         const string kXUIStyleDirectoryPath = "Assets/Resources/XUIStyles/";
 
-        [ContextMenu("XUI/Attach Style/Text")]
+        [MenuItem("CONTEXT/Text/Attach XUIStyle", false)]
         static void AttachTextStyle() {
             GameObject selectedGO = Selection.activeObject as GameObject;
             if (selectedGO == null) {
@@ -32,14 +32,14 @@ namespace XUI.Editor {
 
             XUITextStyleController controller = selectedGO.GetComponent<XUITextStyleController>();
             if (controller != null) {
-                EditorUtility.DisplayDialog("Already attached!", "This GameObject has already been attach TextStyleController.", "Ok");
+                EditorUtility.DisplayDialog("Already attached!", "This GameObject has already attached TextStyleController.", "Ok");
                 return;
             }
 
             selectedGO.AddComponent<XUITextStyleController>();
         }
 
-        [ContextMenu("XUI/Attach Style/Text")]
+        [MenuItem("CONTEXT/Image/Attach XUIStyle")]
         static void AttachImageStyle() {
             GameObject selectedGO = Selection.activeObject as GameObject;
             if (selectedGO == null) {
