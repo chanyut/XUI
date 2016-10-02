@@ -5,9 +5,7 @@ UI Theme/Style system for Unity UI (uGUI)
 In my previous Game project, there are so many UI pages, most of them are Text!. It's really painful, when the UI design was changed, I have to edit Font size, style or color. There are 20-30 Texts to be edited. Prefab does not help me. Because each UI page is also linked with prefab. So the linkage between my Text prefab and the Tex, inside each UI page, was broken.
 
 ## How to Create and apply Style to UI Component
-Right now, XUI supports only two UI components: 
-* Text
-* Image
+Right now, XUI supports only two UI components: Text and Image.
 
 1. First, you have to create a Style object. By using Menu XUIStyle > Create Style > Text
 2. New style object will be placed in folder Assets/Resources/XUIStyle/
